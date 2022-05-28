@@ -16,7 +16,6 @@ networks:
   ganache-local:
     verify: False
   mainnet-fork:
-    host: https://eth-mainnet.alchemyapi.io/v2/gWCyknNPhngHJ5hp4ZjGY5Y3roiFEGAd
     verify: False
 wallet:
   from_key: ${PRIVATE_KEY}
