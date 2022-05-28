@@ -1,0 +1,22 @@
+dotenv: .env
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.2.0
+  - smartcontractkit/chainlink@1.4.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0"
+      - "@chainlink=smartcontractkit/chainlink@1.4.0"
+networks:
+  rinkeby:
+    eth_usd_price_feed: ""
+    verify: True
+  development:
+    verify: False
+  ganache-local:
+    verify: False
+  mainnet-fork:
+    host: https://eth-mainnet.alchemyapi.io/v2/gWCyknNPhngHJ5hp4ZjGY5Y3roiFEGAd
+    verify: False
+wallet:
+  from_key: ${PRIVATE_KEY}
